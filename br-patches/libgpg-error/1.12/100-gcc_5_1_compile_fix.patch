@@ -1,0 +1,12 @@
+diff -u -r -N libgpg-error-1.12-orig/src/Makefile.in libgpg-error-1.12/src/Makefile.in
+--- libgpg-error-1.12-orig/src/Makefile.in	2013-06-24 06:42:26.000000000 +0200
++++ libgpg-error-1.12/src/Makefile.in	2015-07-11 10:30:13.438645482 +0200
+@@ -194,7 +194,7 @@
+ CC_FOR_BUILD = @CC_FOR_BUILD@
+ CFLAGS = @CFLAGS@
+ CPP = @CPP@
+-CPPFLAGS = @CPPFLAGS@
++CPPFLAGS = -P @CPPFLAGS@
+ CYGPATH_W = @CYGPATH_W@
+ DEFS = @DEFS@
+ DEPDIR = @DEPDIR@
